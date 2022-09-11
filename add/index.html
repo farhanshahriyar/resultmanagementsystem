@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Management System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+
+        :root {
+            --font: "Poppins", sans-serif;
+        }
+
+        * {
+            font-family: var(--font) !important;
+        }
+
+        body {
+            background: #101010;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        div.load {
+            text-align: center;
+            font-size: 38px !important;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .logo {
+            padding: 9px 15px;
+            background: #202020;
+            color: #dfdfdf;
+            font-size: 13px;
+            text-align: center;
+
+            font-family: var(--font);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="logo"></p>
+    <div class="load">
+
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            document.querySelector('.logo').innerHTML = 'RESULT MANAGEMENT SYSTEM';
+
+            var online = window.navigator.onLine;
+            setInterval(() => {
+                if (online) {
+                    var load = document.querySelector('.load');
+                    load.innerHTML = 'Redirecting...'
+                    setTimeout(()=>{
+                        window.location.replace('../dashboard');
+                    }, 1200)
+                } else {
+                    var load = document.querySelector('.load');
+                    load.innerHTML = 'No Internet!'
+                    setTimeout(()=>{
+                        window.location.reload();
+                    }, 1000)
+
+                }
+            }, 1500);
+
+        });
+    </script>
+</body>
+
+</html>

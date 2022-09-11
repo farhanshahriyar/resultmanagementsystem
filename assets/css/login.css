@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --font-family: "Barlow";
+}
+.bg-default.student {
+    /* if light  */
+   background:linear-gradient(to bottom, #3c36f6, transparent) !important;
+    /* else it must be black */
+    /* background: #181818!important; */
+    overflow: hidden !important;
+}
+.bg-default.admin {
+    /* if light  */
+   background:linear-gradient(to bottom, #ad5cf8, transparent) !important;
+    /* else it must be black */
+    /* background: #181818!important; */
+    overflow: hidden !important;
+}
+nav#navbar-main .container {
+    background: #f0f0f02b;
+    padding: 5px 10px;
+    border-radius: 13px;
+}
+
+@media (min-width: 1200px){
+.login-page .container {
+    max-width: 510px;
+}
+}
+input.form-control {
+    -webkit-text-fill-color: #6e6b6b;
+}
+.form-group select {
+    width: 97%;
+    padding: 15px 9px;
+    text-align: center;
+    outline: none;
+    font-weight: 800;
+    font-size:14px;
+    font-family: var(--font-family) !important;
+    border: none;
+    text-transform: uppercase;
+    color: #6e6b6b !important;
+}
+input.form-control {
+    font-weight: 800;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+}
+.form-group option{
+    font-weight: 800 !important;
+    border-bottom: 2px solid #f1f1f1;
+    padding: 12px;
+}
+.btn-primary{
+    font-family: var(--font-family) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.text-center.text-muted.mb-4 small {
+    font-weight: 700;
+    font-size: 26px;
+    color:rgb(44 43 44);
+    font-family: var(--font-family) !important;
+
+}
+.nav-footer .nav-link, footer .text-muted{
+    font-family: var(--font-family) !important;
+    font-weight: 800;
+    font-size: 14px;
+    /* if black */
+    /* color: #5c5f64 !important; */
+    /* else it must be light */
+    color: #4b4848 !important;
+}
+.navbar-horizontal .navbar-brand img {
+    height: 60px;
+    border: 6px solid #f5f4f517;
+    border-radius: 30px;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0,0.168); */
+}
+.navbar-horizontal .navbar-nav .nav-link .nav-link-inner--text {
+    margin-left: .25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.md-text{
+    font-size: 1.05rem;
+}
+.md-strong{
+    font-size: 13px !important;
+}
